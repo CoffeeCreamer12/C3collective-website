@@ -501,6 +501,6 @@ img, svg { display: block; }
   .steps { grid-template-columns: 1fr; }
   .step { border-left: none; padding: 0; }
   .lockup-c { font-size: 150px; }
-  .lockup-three { font-size: 88px; margin-left: -14px; }
+  .lockup-three { font-size: 78px; margin-left: -5px; }
   .lockup-reel { width: 54px; height: 54px; }
 }
