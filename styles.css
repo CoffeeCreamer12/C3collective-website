@@ -50,12 +50,43 @@ img, svg { display: block; }
   gap: 24px;
   padding: 16px 32px;
 }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand-reel { width: 34px; height: 34px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+.brand-c {
+  position: relative;
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1;
+  color: #f0e1d2;
+}
+.brand-reel {
+  position: absolute;
+  left: 21px;
+  top: 23px;
+  width: 17px;
+  height: 17px;
+  transform: translate(-50%, -50%);
+}
+.brand-three {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  color: #f0e1d2;
+  margin-left: -1px;
+  margin-top: 1px;
+}
 .brand-name {
-  font-family: 'Cormorant', serif;
+  font-family: 'Bodoni Moda', serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 23px;
   letter-spacing: 0.5px;
   color: #f0e1d2;
 }
@@ -159,35 +190,44 @@ img, svg { display: block; }
 .lockup-row {
   position: relative;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   line-height: 1;
 }
-.lockup-letter {
-  font-family: 'Cormorant', serif;
-  font-weight: 500;
-  font-size: 190px;
+.lockup-c {
+  position: relative;
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 200px;
   line-height: 1;
   color: #f0e1d2;
 }
-.lockup-letter.three { margin-left: 56px; }
+.lockup-three {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 104px;
+  line-height: 1;
+  color: #f0e1d2;
+  align-self: flex-start;
+  margin-top: 4px;
+  margin-left: -6px;
+}
 .lockup-reel {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 80px;
-  height: 80px;
+  left: 92px;
+  top: 100px;
+  width: 70px;
+  height: 70px;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 .lockup-word {
-  font-family: 'Barlow Condensed', sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 14px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
   color: #f0e1d2;
-  padding-left: 14px;
+  margin-top: 2px;
 }
 
 /* ===== Promise (Capture/Convert/Cherish) ===== */
@@ -460,7 +500,7 @@ img, svg { display: block; }
   .services-grid, .price-cards { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .step { border-left: none; padding: 0; }
-  .lockup-letter { font-size: 140px; }
-  .lockup-letter.three { margin-left: 42px; }
-  .lockup-reel { width: 60px; height: 60px; }
+  .lockup-c { font-size: 150px; }
+  .lockup-three { font-size: 88px; margin-left: -14px; }
+  .lockup-reel { width: 54px; height: 54px; }
 }
