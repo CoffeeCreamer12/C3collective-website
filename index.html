@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18197276460"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18197276460');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>C3 Collective — Vintage Media, Digitized | Honeoye Falls, NY</title>
   <meta name="description" content="C3 Collective is a local studio in Honeoye Falls, NY digitizing vintage film, video, photos and audio to crisp digital files. Capture. Convert. Cherish.">
@@ -49,6 +57,7 @@
         <a class="nav-link" href="#process">How It Works</a>
         <a class="nav-link" href="#pricing">Pricing</a>
         <a class="nav-link" href="#story">Our Story</a>
+        <a class="nav-link" href="#faq">FAQ</a>
         <a class="btn btn-gold btn-sm" href="#contact">Start a Transfer</a>
       </div>
     </nav>
@@ -278,6 +287,20 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">Frequently asked.</h2>
+      <details><summary>How long does it take?</summary><p>About 30 days, depending on how many orders I have.</p></details>
+      <details><summary>Can you save damaged tapes?</summary><p>I can't recover broken tapes, but I can try to clean moldy ones.</p></details>
+      <details><summary>What files do I get?</summary><p>MP4 files, which play on most phones, TVs and computers.</p></details>
+      <details><summary>Is there a minimum order?</summary><p>No minimum.</p></details>
+      <details><summary>How do I pay?</summary><p>Venmo, Cash App, Apple Pay, PayPal, cash or check.</p></details>
+      <details><summary>Can you upload to the cloud?</summary><p>Yes. Share a Google Drive folder with me and I'll upload your videos there too.</p></details>
+    </div>
+  </section>
+
   <!-- ===== Contact ===== -->
   <section class="contact" id="contact">
     <div class="contact-inner">
@@ -311,6 +334,15 @@
     // Build the decorative film-sprocket strips
     document.querySelectorAll('.sprockets').forEach(function (strip) {
       for (var i = 0; i < 48; i++) strip.appendChild(document.createElement('span'));
+    });
+
+    // Track call, text and email taps as Google Ads conversions
+    document.querySelectorAll('a[href^="tel:"], a[href^="sms:"], a[href^="mailto:"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {'send_to': 'AW-18197276460/crwvCKTunsscEKzOkeVD'});
+        }
+      });
     });
   </script>
   <div class="mobile-call-bar"><a href="tel:+15856909977">Call (585) 690-9977</a><a href="sms:+15856909977">Text Me</a></div>
