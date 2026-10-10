@@ -514,3 +514,8 @@ img, svg { display: block; }
   .mobile-call-bar a:last-child { background: #43301f; color: #f0e1d2; }
   body { padding-bottom: 64px; }
 }
+
+/* Customer review */
+.review { max-width: 620px; margin: 40px auto 0; padding: 28px 30px; border: 1px solid rgba(240,225,210,0.2); border-radius: 3px; background: rgba(240,225,210,0.06); }
+.review p { font-family: 'Cormorant', serif; font-style: italic; font-size: 22px; line-height: 1.5; color: #f4e9dc; margin-bottom: 14px; }
+.review cite { font-family: 'Barlow Condensed', sans-serif; font-style: normal; text-transform: uppercase; letter-spacing: 1.5px; font-size: 14px; color: #d2a14f; }
