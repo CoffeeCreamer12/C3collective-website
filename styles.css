@@ -539,3 +539,15 @@ img, svg { display: block; }
 .faq-more a { color: #d2a14f; border-bottom: 1px solid rgba(210,161,79,0.5); }
 @media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .faq-item p { padding-left: 24px; } }
+
+/* ===== Motion preview (subtle reveals; content stays visible without JS) ===== */
+.motion-ready .hero-inner > div:first-child > *,
+.motion-ready .lockup,
+.motion-ready [data-reveal] { opacity: 0; }
+.service-card, .price-card, .step, .btn { will-change: auto; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .service-card, .price-card, .step { transition: transform .25s ease, box-shadow .25s ease; }
+  .service-card:hover, .price-card:hover, .step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.22); }
+  .btn { transition: transform .2s ease, background-color .2s, color .2s, border-color .2s; }
+  .btn:hover { transform: translateY(-2px); }
+}

@@ -32,6 +32,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,700&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Barlow+Condensed:wght@400;500;600&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Motion preview: hide reveal targets only when JS runs and motion is allowed; failsafe reveals after 2.5s
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('motion-ready');
+      setTimeout(function () { if (!window.__c3motion) document.documentElement.classList.remove('motion-ready'); }, 2500);
+    }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -365,5 +372,6 @@
     });
   </script>
   <div class="mobile-call-bar"><a href="tel:+15856909977">Call Me</a><a href="sms:+15856909977">Text Me</a></div>
+  <script type="module" src="motion.js"></script>
 </body>
 </html>
